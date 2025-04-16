@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {View, Text Animated} from 'react-native'; 
+import {View, Text, Animated} from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import colors from '../constants/colors';
 import {convertDateToFormattedText} from '../constants/utility';
