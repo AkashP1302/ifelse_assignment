@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
       shadowRadius: 5,
       shadowOffset: {width: 0, height: 2},
       marginVertical: 10,
-      width: 180,
+      width: 155,
     },
     title: {
       fontSize: 14,
