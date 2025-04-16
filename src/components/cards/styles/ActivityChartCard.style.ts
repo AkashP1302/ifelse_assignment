@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
       backgroundColor: colors.card,
       padding: 16,
       borderRadius: 16,
-      shadowColor: '#000',
+      shadowColor: colors.black,
       shadowOpacity: 0.05,
       shadowOffset: {width: 0, height: 2},
       shadowRadius: 6,
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     },
     legendText: {
       fontSize: 12,
-      color: '#555',
+      color: colors.gray,
     },
     rightCircleIcon: {
       borderRadius: 20,

@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react';
-import {View, Text, StyleSheet, Dimensions} from 'react-native';
+import {View, Text} from 'react-native';
 import Svg, {Circle} from 'react-native-svg';
 import colors from '../../constants/colors'; // Adjust to your colors file
 import ShimmerPlaceholder from 'react-native-shimmer-placeholder';
 import {taskSummaryData} from '../../jsonData/taskSummaryData';
+import styles from './styles/TaskSummaryCard.style';
 
 const CIRCLE_RADIUS = 40;
 const STROKE_WIDTH = 8;
@@ -87,57 +88,3 @@ const TaskSummaryCard = () => {
 };
 
 export default TaskSummaryCard;
-
-const styles = StyleSheet.create({
-  card: {
-    flexDirection: 'row',
-    backgroundColor: colors.primary,
-    borderRadius: 12,
-    padding: 16,
-    elevation: 2,
-    shadowColor: '#000',
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    shadowOffset: {width: 0, height: 2},
-    margin: 10,
-    alignItems: 'center',
-  },
-  leftSection: {
-    width: 100,
-    height: 100,
-    justifyContent: 'center',
-    alignItems: 'center',
-    position: 'relative',
-  },
-  percentageTextWrapper: {
-    position: 'absolute',
-    top: '38%',
-    left: '30%',
-  },
-  percentageText: {
-    fontSize: 16,
-    fontWeight: '800',
-    color: colors.card,
-    justifyContent: 'center',
-    marginLeft: 6,
-  },
-  rightSection: {
-    flex: 1,
-    paddingLeft: 16,
-  },
-  title: {
-    fontSize: 16,
-    fontWeight: '700',
-    color: colors.card,
-    marginBottom: 4,
-  },
-  subtitle: {
-    fontSize: 13,
-    color: colors.card,
-    marginBottom: 4,
-  },
-  footer: {
-    fontSize: 12,
-    color: colors.card,
-  },
-});

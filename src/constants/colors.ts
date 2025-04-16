@@ -11,6 +11,7 @@ const colors = {
     info: '#64B5F6',
     border: '#E0E0E0',
     gray: '#A0ADBC',
+    black: '#000000',
     lightGray: '#F0F0F0',
 
   };

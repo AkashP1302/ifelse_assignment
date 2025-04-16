@@ -1,5 +1,5 @@
 import React, {useEffect, useState, useRef} from 'react';
-import {View, Text, ScrollView, Animated} from 'react-native';
+import {View, ScrollView, Animated} from 'react-native';
 import InfoCard from '../components/InfoCard';
 import {infoCards} from '../jsonData/infoCardData';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';

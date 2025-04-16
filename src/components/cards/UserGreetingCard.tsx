@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {View, Text, Image} from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import colors from '../../constants/colors';
 import {userData} from '../../jsonData/userData';
 import ShimmerPlaceholder from 'react-native-shimmer-placeholder';
 import styles from './styles/UserGreetingCard.style';
+import colors from '../../constants/colors';
 
 const UserGreetingCard = () => {
   const [showLoader, setShowLoader] = useState(true);
@@ -35,7 +35,7 @@ const UserGreetingCard = () => {
       <View style={styles.textContainer}>
         <Text style={styles.greeting}>Hi, {userData.name}</Text>
         <View style={styles.phoneRow}>
-          <FontAwesome name="phone" size={16} color="#999" />
+          <FontAwesome name="phone" size={16} color={colors.gray} />
           <Text style={styles.phoneText}>{userData.phone}</Text>
         </View>
       </View>

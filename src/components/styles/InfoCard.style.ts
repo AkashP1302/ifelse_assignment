@@ -1,5 +1,6 @@
 
 import {Dimensions, StyleSheet} from 'react-native';
+import colors from '../../constants/colors';
 const {width} = Dimensions.get('window');
 
 
@@ -10,7 +11,7 @@ const styles = {
       borderRadius: 16,
       margin: 6,
       justifyContent: 'space-between',
-      shadowColor: '#000',
+      shadowColor:colors.black,
       shadowOpacity: 0.05,
       shadowRadius: 4,
       shadowOffset: {width: 0, height: 2},
@@ -26,7 +27,7 @@ const styles = {
       marginRight: 6,
     },
     title: {
-      color: '#fff',
+      color: colors.card,
       fontSize: 14,
       fontWeight: '600',
       flexShrink: 1,
@@ -37,7 +38,7 @@ const styles = {
       alignItems: 'center',
     },
     subtitle: {
-      color: '#fff',
+      color: colors.card,
       fontSize: 12,
       flexShrink: 1,
     },

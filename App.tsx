@@ -6,7 +6,6 @@ import GlobalFont from 'react-native-global-font';
 
 export default function App() {
   useEffect(() => {
-    // Set global font
     GlobalFont.applyGlobal('Poppins-Regular');
   }, []);
 

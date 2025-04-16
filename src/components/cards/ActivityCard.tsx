@@ -1,7 +1,6 @@
 import React, {useEffect, useRef} from 'react';
-import {View, Text, StyleSheet, Animated} from 'react-native';
+import {View, Text, Animated} from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import colors from '../../constants/colors';
 import styles from './styles/ActivityCard.style';
 
 interface ActivityCardProps {

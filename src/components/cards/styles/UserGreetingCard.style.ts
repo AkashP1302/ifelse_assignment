@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     },
     phoneText: {
       marginLeft: 6,
-      color: '#999',
+      color: colors.gray,
       fontSize: 14,
     },
     profileImage: {
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
       height: 40,
       borderRadius: 20,
       borderWidth: 2,
-      borderColor: '#8645FF',
+      borderColor: colors.primary,
     },
   });
   

@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
       borderRadius: 16,
       marginVertical: 10,
       alignSelf: 'center',
-      shadowColor: '#000',
+      shadowColor: colors.black,
       shadowOpacity: 0.1,
       shadowRadius: 4,
       shadowOffset: {width: 0, height: 2},

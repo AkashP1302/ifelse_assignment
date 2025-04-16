@@ -1,6 +1,5 @@
 import React, {useEffect, useRef} from 'react';
-import {View, Text, StyleSheet, Animated} from 'react-native';
-import colors from '../../constants/colors';
+import {View, Text, Animated} from 'react-native';
 import styles from './styles/LeadCampaignCard.style';
 
 interface LeadCampaignCardProps {
@@ -27,12 +26,12 @@ const LeadCampaignCard: React.FC<LeadCampaignCardProps> = ({
     const progressBarLoop = Animated.loop(
       Animated.sequence([
         Animated.timing(progressBarScale, {
-          toValue: 1.1, // Increase scale for pulsation effect
+          toValue: 1.1,
           duration: 600,
           useNativeDriver: true,
         }),
         Animated.timing(progressBarScale, {
-          toValue: 1, // Return to normal size
+          toValue: 1,
           duration: 600,
           useNativeDriver: true,
         }),
@@ -51,12 +50,12 @@ const LeadCampaignCard: React.FC<LeadCampaignCardProps> = ({
 
       {/* Progress Bar */}
       <View style={styles.progressBackground}>
-        <Animated.View // Use Animated.View for the progress bar
+        <Animated.View
           style={[
             styles.progressBar,
             {width: `${progress}%`},
             {
-              transform: [{scale: progressBarScale}], // Apply scale transformation
+              transform: [{scale: progressBarScale}],
             },
           ]}
         />

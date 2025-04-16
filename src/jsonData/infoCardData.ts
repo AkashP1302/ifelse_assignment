@@ -1,5 +1,3 @@
-// infoCardData.ts
-
 import colors from "../constants/colors";
 
 export const infoCards = [

@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import LeadCampaignSection from '../screens/LeadCampaignSection';
-import colors from '../constants/colors';
 import styles from './styles/TabSection.style';
+import colors from '../constants/colors';
 
 const TabSection = () => {
   const [activeTab, setActiveTab] = useState<
@@ -47,7 +47,7 @@ const TabSection = () => {
         </View>
 
         <TouchableOpacity onPress={() => console.log('Filter clicked')}>
-          <FontAwesome name="sliders" size={20} color="#333" />
+          <FontAwesome name="sliders" size={20} color={colors.gray} />
         </TouchableOpacity>
       </View>
 

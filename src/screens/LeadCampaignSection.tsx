@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {View, StyleSheet, ScrollView, Dimensions} from 'react-native';
+import {View, StyleSheet, ScrollView} from 'react-native';
 import LeadCampaignCard from '../components/cards/LeadCampaignCard';
 import {leadCampaignData} from '../jsonData/leadCampaignData';
 import ShimmerPlaceholder from 'react-native-shimmer-placeholder';
@@ -47,7 +47,6 @@ const LeadCampaignSection = () => {
 };
 
 export default LeadCampaignSection;
-const {width} = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   cardWrapper: {

@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
       borderRadius: 12,
       padding: 16,
       elevation: 3,
-      shadowColor: '#000',
+      shadowColor: colors.black,
       shadowOpacity: 0.1,
       shadowOffset: {width: 0, height: 2},
       shadowRadius: 4,
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     },
     progressBackground: {
       height: 8,
-      backgroundColor: '#eee',
+      backgroundColor: colors.lightGray,
       borderRadius: 4,
       overflow: 'hidden',
       marginBottom: 12,

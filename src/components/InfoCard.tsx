@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-  ViewStyle,
-  TextStyle,
-  Dimensions,
-} from 'react-native';
+import {View, Text} from 'react-native';
 import colors from '../constants/colors';
 import styles from './styles/InfoCard.style';
 
@@ -17,8 +10,6 @@ interface InfoCardProps {
   leftIcon?: React.ReactNode;
   rightIcon?: React.ReactNode;
 }
-
-const {width} = Dimensions.get('window');
 
 const InfoCard: React.FC<InfoCardProps> = ({
   backgroundColor = colors.primary,

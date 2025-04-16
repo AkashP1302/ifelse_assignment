@@ -3,6 +3,7 @@ import {View, StyleSheet} from 'react-native';
 import ActivityCard from '../components/cards/ActivityCard';
 import ShimmerPlaceholder from 'react-native-shimmer-placeholder';
 import {activityData} from '../jsonData/activityData';
+import styles from './styles/ActivitySection.style';
 
 const ActivitySection = () => {
   const [showLoader, setShowLoader] = useState(true);
@@ -46,10 +47,3 @@ const ActivitySection = () => {
 };
 
 export default ActivitySection;
-
-const styles = StyleSheet.create({
-  container: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-  },
-});

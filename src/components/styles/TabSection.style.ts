@@ -27,11 +27,11 @@ const styles = StyleSheet.create({
     },
     tabText: {
       fontSize: 16,
-      color: '#666',
-      fontWeight: '500',
+      color: colors.gray,
+      fontWeight: '600',
     },
     activeTabText: {
-      color: '#fff',
+      color: colors.card,
     },
     contentBox: {
       padding: 8,
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     },
     contentText: {
       fontSize: 16,
-      color: '#333',
+      color: colors.gray,
     },
   });
   

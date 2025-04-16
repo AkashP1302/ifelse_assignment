@@ -7,9 +7,9 @@ import * as shape from 'd3-shape';
 interface LineChartWithFillProps {
   data: number[];
   strokeColor: string;
-  fillOpacity?: string; // Optional: default to 33 (20% opacity)
+  fillOpacity?: string;
   showGrid?: boolean;
-  showDots?: boolean; // Optional: show/hide dots
+  showDots?: boolean;
 }
 
 const LineChartWithFill: React.FC<LineChartWithFillProps> = ({
