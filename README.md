@@ -22,15 +22,15 @@ Screenshots of the final UI output have been included in the `/OUTPUT` folder, a
 
 ## ⚙️ Tech Stack
 
-| Feature             | Tech Used                          |
-| ------------------- | ---------------------------------- |
-| Framework           | React Native                       |
-| Language            | TypeScript                         |
-| State Management    | Redux Toolkit + RTK Query          |
-| Styling             | Custom Stylesheets (no frameworks) |
-| API Call            | `http://01.fy25ey02.64mb.io/`      |
-| Charting (Optional) | `react-native-svg-charts` (future) |
-| Icons               | FontAwesome                        |
+| Feature          | Tech Used                          |
+| ---------------- | ---------------------------------- |
+| Framework        | React Native                       |
+| Language         | TypeScript                         |
+| State Management | Redux Toolkit + RTK Query          |
+| Styling          | Custom Stylesheets (no frameworks) |
+| API Call         | `http://01.fy25ey02.64mb.io/`      |
+| Charting         | `react-native-svg-charts` (future) |
+| Icons            | FontAwesome                        |
 
 ---
 
