@@ -1,4 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { BASE_API_URL } from './apiConfig';
 
 // Define the response data type
 export interface CardData {
@@ -10,7 +11,13 @@ export interface CardData {
 // Create the API slice
 export const cardDataApi = createApi({
   reducerPath: 'cardDataApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://01.fy25ey02.64mb.io/' }),
+  baseQuery: fetchBaseQuery({
+    baseUrl: BASE_API_URL,
+    prepareHeaders: (headers) => {
+      headers.set('Authorization', `Bearer token`);
+      return headers;
+    },
+  }),  
   endpoints: (builder) => ({
     getCardData: builder.query<CardData, void>({
       query: () => '', 
